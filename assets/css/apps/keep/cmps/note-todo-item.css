@@ -1,0 +1,29 @@
+.note-todo-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border-bottom: 1px solid var(--primary-clr-400);
+}
+
+.note-todo-item input[type="checkbox"] {
+    padding: 0;
+    margin-inline-start: 1em;
+    /* background-color: transparent; */
+
+    accent-color: var(--primary-clr-700);
+    cursor: pointer;
+}
+
+.note-todo-item>div {
+    flex-grow: 1;
+}
+
+.note-todo-item input[type="text"] {
+    margin: 0;
+    padding: 0.5em;
+    width: 99%;
+}
+
+.note-todo-item .todo-strikeline {
+    text-decoration: line-through;
+}

@@ -1,0 +1,10 @@
+.clean-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* NO FOCUS ON INPUTS */
+.no-focus-visible:focus-visible {
+  outline: none;
+}

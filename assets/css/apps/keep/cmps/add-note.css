@@ -1,0 +1,25 @@
+.add-note {
+    grid-area: add-note;
+    justify-self: center;
+    padding-inline-end: 0.5em;
+
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 37.5em;
+    min-width: 17.5em;
+    height: max-content;
+    box-shadow: 0 0 8px var(--primary-clr-500);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.add-note p {
+    flex-grow: 1;
+    padding: 16px;
+    cursor: text;
+}
+
+.add-note .dynamic-note {
+    width: 100%;
+}

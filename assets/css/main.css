@@ -1,0 +1,57 @@
+/* SETUP */
+@import './setup/vars.css';
+@import './setup/typography.css';
+
+/* BASICS */
+@import './basics/base.css';
+@import './basics/layout.css';
+@import './basics/helper.css';
+
+/* PAGES */
+@import './pages/home.css';
+@import './pages/about.css';
+
+/* COMPONENTS */
+@import './cmps/app-header.css';
+@import './cmps/app-footer.css';
+@import './cmps/custom-color-picker.css';
+@import './cmps/long-txt.css';
+@import './cmps/user-msg.css';
+
+/* APP - BOOK */
+@import './apps/book/basics/helper.css';
+@import './apps/book/pages/book-index.css';
+@import './apps/book/cmps/add-book.css';
+@import './apps/book/cmps/book-details.css';
+@import './apps/book/cmps/book-filter.css';
+@import './apps/book/cmps/book-list.css';
+@import './apps/book/cmps/book-preview.css';
+@import './apps/book/cmps/book-review-form.css';
+@import './apps/book/cmps/book-reviews-list.css';
+@import './apps/book/cmps/stars-rate.css';
+
+/* APP - KEEP */
+@import './apps/keep/basics/helper.css';
+@import './apps/keep/pages/app-keep.css';
+@import './apps/keep/pages/edit-note.css';
+@import './apps/keep/cmps/add-note.css';
+@import './apps/keep/cmps/note-btns.css';
+@import './apps/keep/cmps/note-dynamic-note.css';
+@import './apps/keep/cmps/note-preview.css';
+@import './apps/keep/cmps/note-types.css';
+@import './apps/keep/cmps/note-todo-item.css';
+@import './apps/keep/cmps/notes-filter.css';
+@import './apps/keep/cmps/notes-filter-item.css';
+@import './apps/keep/cmps/notes-list.css';
+
+
+/* APP - MAIL */
+@import './apps/mail/pages/mail-index.css';
+@import './apps/mail/cmps/mail-typs-nav.css';
+@import './apps/mail/cmps/search-filter.css';
+@import './apps/mail/cmps/mail-list.css';
+@import './apps/mail/cmps/compose-mail.css';
+@import './apps/mail/cmps/mail-preview.css';
+@import './apps/mail/cmps/mail-view.css';
+@import './apps/mail/cmps/mail-edit.css';
+@import './apps/mail/cmps/meter-bar.css';

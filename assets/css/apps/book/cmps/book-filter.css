@@ -1,0 +1,40 @@
+.book-filter {
+  align-self: flex-end;
+}
+
+.book-filter input {
+  margin: 0;
+}
+
+.book-filter input[type='range'] {
+  -webkit-appearance: none;
+  margin: 0.5em;
+  height: 12px;
+  width: 200px;
+  overflow: hidden;
+  border: 1px solid var(--primary-clr-700);
+  border-radius: 5px;
+  background-color: var(--primary-clr-200);
+  cursor: pointer;
+}
+
+.book-filter input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  aspect-ratio: 1/1;
+  background: var(--primary-clr-700);
+  box-shadow: -200px 0 0 200px var(--primary-clr-500);
+}
+
+
+
+.book-filter ul {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.book-filter label {
+  margin-inline-end: 0.5em;
+}

@@ -1,0 +1,131 @@
+.app-header {
+  background-color: var(--brown-clr-200);
+  box-shadow: 0 3px var(--brown-clr-800);
+  margin:11px 8px 11px
+ 
+  
+
+}
+
+.app-header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header header * {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app-header header .logo {
+  height: 80px;
+  margin-inline-start: 3.2px;
+  object-fit: cover;
+}
+
+
+
+.header-nav-links-btn{
+  background-image: url(../../img/hamburger-nav/hamburger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-inline-end: 20px;
+  width: 22.8px;
+  height: 22.8px;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.header-nav-links-btn:hover{
+  background-color: rgba(128, 128, 128, 0.188);
+}
+.header-nav-links-btn.active{
+  background-color: rgba(128, 128, 128, 0.188);
+}
+.header-menu-links{
+  display: grid;
+  position: fixed;
+  right:1.8em;
+  top: 4em;
+  z-index: 50;
+  justify-content: center;
+  width: 10em;
+  grid-template-rows:  80px 80px 80px 80px 80px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  border-radius: .75em;
+  padding:0 1em;
+}
+.header-menu-links>*{
+  
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  position: relative;
+  width: 10em;
+  
+}
+.background-screen-back{
+  height:100vh ;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 40;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header-menu-links>*:hover{
+  background-color: var(--primary-clr-200);
+  border-radius: .75em;
+}
+.nav-keep{
+  background-image:  url(../../img/hamburger-nav/keep.png);
+
+}
+.nav-book{
+  background-image:  url(../../img/hamburger-nav/book.png);
+  
+}
+.nav-about{
+  background-image:  url(../../img/hamburger-nav/team.png);
+  ;
+}
+.nav-home{
+ background-image:  url(../../img/hamburger-nav/home.png);
+ 
+}
+.nav-mail{
+  background-image:  url(../../img/hamburger-nav/gmail.png);
+}
+.header-menu-links>* span{
+  position: absolute;
+  bottom: 0;
+}
+
+@media (min-width:500px){
+  .header-menu-links{
+    display: grid;
+    position: absolute;
+    right:0;
+    top: 2em;
+    width: 17em;
+    grid-template:  80px 80px/80px 80px 80px;
+    border-radius: .75em;
+    padding: 1em;
+  }
+  .header-menu-links>*{
+    width: 80px;
+    
+  }
+}
+/* 
+ {isMenu&&<div className="header-menu-links">
+          <NavLink className='nav-home' to="/" exact><span className="nav-home-span">Home</span></NavLink>
+          <NavLink className='nav-book' to="/book"><span className="nav-book-span">Books</span></NavLink>
+          <NavLink className='nav-keep' to="/keep"><span className="nav-keep-span">Keep</span></NavLink>
+          <NavLink className='nav-mail'to="/mail"><span className="nav-mail-span">Mail</span></NavLink>
+          <NavLink className='nav-about'to="/about"><span className="nav-about-span">About</span></NavLink>
+*/

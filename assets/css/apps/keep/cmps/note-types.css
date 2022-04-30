@@ -1,0 +1,94 @@
+.note-types {
+    width: 100%;
+}
+
+.note-types form {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-types .backlog-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note-types .backlog-container>input {
+    width: 99%;
+}
+
+.note-types .backlog-container>img {
+    width: 100%;
+}
+
+.note-types .backlog-container .backlog {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.note-types.text-note p{
+    width: 100%;
+}
+
+.note-types input[type="text"],
+.note-types.text-note p,
+.note-types textarea {
+    font-family: inherit;
+    font-size: 1em;
+    margin-top: 0.5em;
+    padding: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+/* .note-types textarea {
+    max-width: 100%;
+    resize: none;
+} */
+
+.note-types input[name="title"],
+.note-types.text-note .title {
+    font-size: 1.1em;
+}
+
+.note-types .note-btns {
+    display: flex;
+    gap: 0.5em;
+    margin: 1em 0;
+}
+
+.note-types .note-btns button:not(.btn-text) {
+    padding: 1.5em;
+}
+
+.note-types .backlog {
+    width: 100%;
+}
+
+.note-types img,
+.note-types iframe {
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.note-types iframe {
+    overflow: hidden;
+    border: none;
+    border-radius: unset;
+}
+
+.edit-note .note-types img {
+    max-height: 50vh;
+}
+
+.edit-note .note-types iframe {
+    max-height: 50vh;
+}
+
+.voice-note .note-btn.img-mic{
+    aspect-ratio: unset;
+    align-self: center;
+}

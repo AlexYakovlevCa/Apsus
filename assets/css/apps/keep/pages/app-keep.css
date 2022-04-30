@@ -1,0 +1,50 @@
+.app-keep {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content 1fr;
+    grid-template-areas: "filter" "add-note"
+        "preview";
+    justify-items: center;
+    justify-content: start;
+    gap: 1.5em;
+    margin: 1em;
+}
+
+.app-keep .note-main-body {
+    grid-area: preview;
+}
+
+.app-keep .note-main-body>h3 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: var(--primary-clr-700);
+    margin-bottom: 1em;
+}
+
+.app-keep .note-main-body>h3:not(:first-of-type) {
+    margin-top: 5em;
+}
+
+@media screen and (min-width: 470px) {
+    .app-keep {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        grid-template-rows: max-content  1fr;
+        grid-template-areas: "filter add-note"
+            "filter preview";
+        justify-items: unset;
+    }
+
+    .app-keep .note-main-body {
+        padding: 1em;
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .app-keep {
+        grid-template-columns: 280px 1fr;
+    }
+}
